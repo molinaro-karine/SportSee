@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 89px;
+  margin-top: 64px;
+}
+.header-title {
+  margin: 0;
+  text-align: left;
+  line-height: 24px;
+}
+.header-title_name {
+  color: #e60000;
+}
+
+.header-text {
+  line-height: 88px;
+}
