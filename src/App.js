@@ -2,12 +2,14 @@ import React from "react";
 import "./pages/styles/App.css";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <div className="App-dashboard">
+        <Sidebar />
         <main>
           <Header />
           <div className="infos">
