@@ -1,10 +1,12 @@
 import React from "react";
 import "./pages/styles/App.css";
 import Header from "./components/Header";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <div className="App-dashboard">
         <main>
           <Header />
