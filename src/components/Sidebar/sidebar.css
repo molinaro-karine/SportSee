@@ -16,13 +16,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 200px;
+  margin-top: 347px;
+  gap: 20px;
 }
 .sidebar-copyright {
   color: #fff;
-  font-size: 0.75em;
+  font-size: 12px;
   font-weight: 500;
-  transform: rotate(270deg);
-  width: 150px;
+  width: 138px;
   line-height: 24px;
+  transform: rotate(-90deg);
+  margin-top: 164px;
 }

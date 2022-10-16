@@ -2,16 +2,24 @@
   width: 100%;
   height: 89px;
   margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .header-title {
   margin: 0;
   text-align: left;
   line-height: 24px;
+  font-weight: 500;
+  font-size: 48px;
 }
 .header-title_name {
   color: #e60000;
 }
 
 .header-text {
-  line-height: 88px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 41px;
 }
