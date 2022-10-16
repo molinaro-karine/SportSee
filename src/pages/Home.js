@@ -3,6 +3,12 @@ import "./Home.css";
 import Header from "../components/header/Header";
 import Nav from "../components/Nav/Nav";
 import Sidebar from "../components/Sidebar/Sidebar";
+import KeyCard from "../components/KeyCards/KeyCard";
+
+import iconCalories from "../assets/calories-icon.svg";
+import iconProtein from "../assets/protein-icon.svg";
+import iconCarbs from "../assets/carbs-icon.svg";
+import iconLipide from "../assets/fat-icon.svg";
 
 function Home() {
   return (
@@ -39,7 +45,12 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="infos-nutrients"></div>
+            <div className="infos-nutrients">
+              <KeyCard icon={iconCalories} />
+              <KeyCard icon={iconProtein} />
+              <KeyCard icon={iconCarbs} />
+              <KeyCard icon={iconLipide} />
+            </div>
           </div>
         </main>
       </div>
