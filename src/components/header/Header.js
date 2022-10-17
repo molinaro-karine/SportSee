@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
       <h1 className="header-title">
         Bonjour
-        <span className="header-title_name"> name</span>
+        <span className="header-title_name"> </span>
       </h1>
       <p className="header-text">
         Félicitation ! Vous avez explosé vos objectifs hier
