@@ -11,7 +11,7 @@ function Error() {
         </h2>
       </div>
 
-      <Link to="/" className="not-found_link">
+      <Link to="/12" className="not-found_link">
         Retourner sur la page d'acceuil
       </Link>
     </section>

@@ -1,5 +1,5 @@
 .sidebar {
-  width: 12%;
+  /* width: 12%;
   height: 100vh;
   background-color: #020203;
   display: flex;
@@ -8,7 +8,14 @@
   align-items: center;
   position: fixed;
   margin-top: -12%;
-  padding-bottom: 7%;
+  padding-bottom: 7%;*/
+
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  background-color: black;
+  padding: 6rem 0;
 }
 .sidebar-icons {
   width: 64px;

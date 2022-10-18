@@ -1,19 +1,11 @@
-import "../KeyCards/KeyCard.css";
+import "./KeyCard.css";
 
-/**
- *
- * @param {number|string} amount
- * @param {string} icon
- * @param {string} type
- * @returns user infos cards
- */
-
-function KeyCard({ icon, type, amount }) {
+function KeyCard({ icon, type, am }) {
   return (
     <div className={`infos ${type}`}>
       <img className="logo" src={icon} alt={`logo ${type}`} />
       <p>
-        <span>{amount}</span>
+        <span>{am}</span>
         <br />
         {type}
       </p>

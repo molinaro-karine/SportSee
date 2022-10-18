@@ -6,15 +6,16 @@
 }
 .App-dashboard {
   display: flex;
-  display: wrap;
 }
 main {
-  width: 80%;
-  margin: auto auto auto 16%;
+  /*width: 80%;
+  margin: auto auto auto 16%;*/
+  width: 100%;
+  margin: 10px 0 0 20px;
 }
 .infos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 5%;
 }
 .infos-graphics {
