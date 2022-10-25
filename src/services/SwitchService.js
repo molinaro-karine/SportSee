@@ -1,7 +1,7 @@
 import FetchApiData from "./dataCalls/FetchApiData";
 import FetchMockedData from "./dataCalls/FetchMockedData";
 
-const isMockedData = true;
+const isMockedData = false;
 
 /**
  * we can either use the mocked data or the one fetched from the API

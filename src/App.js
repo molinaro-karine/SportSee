@@ -18,7 +18,7 @@ const App = () => {
       <main>
         <Sidebar />
         <Routes>
-          <Route path="/:id" element={<Home />} />
+          <Route exact path="/:id" element={<Home />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </main>

@@ -22,6 +22,7 @@ export default class UserActivity {
       const date = new Date(this.sessions[i].day);
       const day = date.getDate();
       this.sessions[i].day = day;
+      console.log(day);
     }
   }
 
