@@ -1,3 +1,7 @@
+/**
+ * @param {object} data activity data
+ **/
+
 export default class UserActivity {
   constructor(data) {
     this.id = data.userId;
@@ -8,6 +12,12 @@ export default class UserActivity {
   }
 
   setUpSessions() {
+    /**
+     *
+     * @param {object} this.sessions
+     * @returns {object} format days to be like what is expected (current month days)
+     */
+
     for (let i = 0; i < this.sessions.length; i++) {
       const date = new Date(this.sessions[i].day);
       const day = date.getDate();
@@ -16,6 +26,13 @@ export default class UserActivity {
   }
 
   setUpYTick() {
+    /**
+     *
+     * @param {object} this.sessions
+     * @param {array} this.ticks
+     * @returns this.ticks to format Y ticks in userActivity graph
+     */
+
     const kilograms = [];
 
     for (const session of this.sessions) {

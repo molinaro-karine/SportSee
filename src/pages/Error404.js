@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
-import "./Error.css";
+import "./error404.css";
 
-function Error() {
+/**
+ * @function Error
+ * @description Diplays a 404 error page.
+ * @returns { HTMLElement }
+ */
+
+function Error404() {
   return (
     <section className="not-found">
       <div>
@@ -12,10 +18,10 @@ function Error() {
       </div>
 
       <Link to="/12" className="not-found_link">
-        Retourner sur la page d'acceuil
+        Retourner sur la page d’accueil
       </Link>
     </section>
   );
 }
 
-export default Error;
+export default Error404;

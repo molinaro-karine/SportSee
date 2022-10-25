@@ -1,4 +1,4 @@
-import "./Loader.css";
+import "./loader.css";
 
 /**
  *
@@ -7,14 +7,13 @@ import "./Loader.css";
 
 function Loader() {
   return (
-    <div className="loader">
-      <span>L</span>
-      <span>o</span>
-      <span>a</span>
-      <span>d</span>
-      <span>i</span>
-      <span>n</span>
-      <span>G</span>
+    <div className="loader-container">
+      <div className="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   );
 }

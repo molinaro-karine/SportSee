@@ -1,28 +1,36 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-import "./nav.css";
 import logo from "../../assets/logo.svg";
+import "./nav.css";
+import { Link } from "react-router-dom";
 
-export default function Nav() {
+/**
+ * Navigation isn't already functional
+ * @returns nav with horizontal navigation bar
+ */
+
+function Nav() {
   return (
-    <nav className="nav">
+    <header className="nav">
       <Link to="/">
-        <img src={logo} className="nav-logo" alt="logo SportSee" />
+        <img className="nav_logo" src={logo} alt="logo SportSee" />
       </Link>
-      <ul className="nav-links">
-        <li className="nav-link">
-          <NavLink to="/">Accueil</NavLink>
-        </li>
-        <li className="nav-link">
-          <NavLink to="/">Profil</NavLink>
-        </li>
-        <li className="nav-link">
-          <NavLink to="/">Réglage</NavLink>
-        </li>
-        <li className="nav-link">
-          <NavLink to="/">Communauté</NavLink>
-        </li>
-      </ul>
-    </nav>
+
+      <nav className="nav_links">
+        <Link className="nav-link" to="/id/accueil">
+          Accueil
+        </Link>
+        <Link className="nav-link" to="/id/profil">
+          Profil
+        </Link>
+        <Link className="nav-link" to="/id/reglage">
+          Réglage
+        </Link>
+        <Link className="nav-link" to="/id/communaute">
+          Communauté
+        </Link>
+      </nav>
+    </header>
   );
 }
+
+export default Nav;

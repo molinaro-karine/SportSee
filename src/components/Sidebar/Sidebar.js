@@ -1,20 +1,39 @@
-import React from "react";
-import "./sidebar.css";
-import iconYoga from "../../assets/yoga.svg";
-import iconNatation from "../../assets/natation.svg";
-import iconBike from "../../assets/bike.svg";
-import iconMuscu from "../../assets/muscu.svg";
+import yoga from "../../assets/yoga.svg";
+import swim from "../../assets/natation.svg";
+import cycle from "../../assets/bike.svg";
+import bodybuilding from "../../assets/muscu.svg";
+import ".//sidebar.css";
+import { Link } from "react-router-dom";
 
-export default function Sidebar() {
+/**
+ *
+ * Sidebar vertical navigation bar isn't already functional
+ * @returns Sidebar vertical navigation bar
+ */
+
+function Sidebar() {
   return (
-    <div className="sidebar">
-      <div className="sidebar-icons">
-        <img src={iconYoga} alt="Logo Yoga" />
-        <img src={iconNatation} alt="Logo Natation" />
-        <img src={iconBike} alt="Logo Bike" />
-        <img src={iconMuscu} alt="Logo Bodybuilding" />
-      </div>
-      <p className="sidebar-copyright">Copiryght, SportSee 2020</p>
-    </div>
+    <section className="sidebar">
+      <nav className="sidebar_nav">
+        <Link className="sidebar-nav-link" to="/id/yoga">
+          <img className="logo" src={yoga} alt="logo Yoga" />
+        </Link>
+        <Link className="sidebar-nav-link" to="/id/swim">
+          <img className="logo" src={swim} alt="logo Swim" />
+        </Link>
+        <Link className="sidebar-nav-link" to="/id/cycle">
+          <img className="logo" src={cycle} alt="logo Cycle" />
+        </Link>
+        <Link className="sidebar-nav-link" to="/id/muscu">
+          <img className="logo" src={bodybuilding} alt="logo Muscu" />
+        </Link>
+      </nav>
+
+      <Link className="sidebar_copy" to="/id">
+        Copyright, SportSee 2020
+      </Link>
+    </section>
   );
 }
+
+export default Sidebar;

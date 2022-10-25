@@ -1,17 +1,25 @@
-import React from "react";
-//import PropTypes from "prop-types";
-import "./Header.css";
+import "./header.css";
+import PropTypes from "prop-types";
 
-export default function Header({ firstName }) {
+/**
+ *
+ * @param { string } firstName
+ * @returns Greetings Header with user first name
+ */
+
+function Header({ firstName }) {
   return (
-    <header className="header">
-      <h1 className="header-title">
-        Bonjour
-        <span className="header-title_name"> {firstName}</span>
+    <div className="header">
+      <h1>
+        Bonjour <span>{firstName}</span>
       </h1>
-      <p className="header-text">
-        Félicitation ! Vous avez explosé vos objectifs hier
-      </p>
-    </header>
+      <p>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>
+    </div>
   );
 }
+
+Header.propTypes = {
+  firstName: PropTypes.string.isRequired,
+};
+
+export default Header;

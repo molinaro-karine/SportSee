@@ -4,10 +4,10 @@ import {
   USER_AVERAGE_SESSIONS,
   USER_PERFORMANCE,
 } from "../../data/mockedDatas";
-import UserActivity from "../../models/UserActivity";
-import UserAverageSessions from "../../models/UserAverageSessions";
 import UserDatas from "../../models/UserDatas";
-import UserPerformance from "../../models/UserPerformances";
+import UserActivity from "../../models/UserActivity";
+import UserPerformance from "../../models/UserPerformance";
+import UserAverageSessions from "../../models/UserAverageSessions";
 
 /**
  * @class
@@ -22,7 +22,7 @@ export default class FetchData {
   /**
    *
    * @param {number} this.id
-   * @returns {object} data from MockedDatas - Used in Header, KeyCard, and Score
+   * @returns {object} data from MockedDatas - Used in Banner, InfosCard, and Score
    */
 
   fetchUserDatas() {
@@ -40,7 +40,6 @@ export default class FetchData {
     const data = USER_ACTIVITY.filter((user) => user.userId === this.id);
     return Promise.resolve(new UserActivity(data[0]));
   }
-
   /**
    *
    * @param {number} this.id

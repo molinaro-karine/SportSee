@@ -7,7 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import "./Activity.css";
+import "./activity.css";
 import React, { useEffect, useState } from "react";
 import { PropTypes } from "prop-types";
 import switchService from "../../services/SwitchService";
@@ -59,12 +59,7 @@ function Activity({ id }) {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis
-            dataKey="day"
-            tickLine={false}
-            /*scale="point" 
-                      padding={{ left: 10, right: 10 }}*/
-          />
+          <XAxis dataKey="day" tickLine={false} />
           <YAxis
             yAxisId="kilogram"
             orientation="right"
