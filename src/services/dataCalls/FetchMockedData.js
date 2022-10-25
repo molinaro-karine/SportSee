@@ -22,7 +22,7 @@ export default class FetchData {
   /**
    *
    * @param {number} this.id
-   * @returns {object} data from MockedDatas - Used in Banner, InfosCard, and Score
+   * @returns {object} data from MockedDatas - Used in Header, KeyCard, and Score
    */
 
   fetchUserDatas() {

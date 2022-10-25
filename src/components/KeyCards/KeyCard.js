@@ -25,7 +25,7 @@ function InfosCard({ icon, type, amount }) {
 InfosCard.propTypes = {
   icon: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  am: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  amount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default InfosCard;

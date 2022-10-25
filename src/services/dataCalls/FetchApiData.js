@@ -20,7 +20,7 @@ export default class FetchData {
    *
    * @param {string} url
    * @param {number} this.id
-   * @returns {object} data from API - Used in Banner, KeyCard, and Score
+   * @returns {object} data from API - Used in Header, KeyCard, and Score
    */
 
   fetchUserDatas() {

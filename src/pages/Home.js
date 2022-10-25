@@ -55,34 +55,40 @@ function Home() {
   if (isDataLoading) return <Loader />;
 
   if (isError) return <Error404 />;
-
+  /*ajout React.StrictMode*/
   return (
     <section className="dashboard">
       <Header firstName={userDatas.firstName} />
 
       <div className="dashboard_main">
-        <Activity id={userIdInt} />
+        <React.StrictMode>
+          <Activity id={userIdInt} />
 
-        <AverageSessions id={userIdInt} />
-        <Performance id={userIdInt} />
-        <Score score={userDatas.score} />
+          <AverageSessions id={userIdInt} />
+          <Performance id={userIdInt} />
+          <Score score={userDatas.score} />
 
-        <KeyCard
-          icon={calories}
-          type="calories"
-          am={`${userDatas.calorieCount}kCal`}
-        />
-        <KeyCard
-          icon={protein}
-          type="proteines"
-          am={`${userDatas.proteinCount}g`}
-        />
-        <KeyCard
-          icon={carbs}
-          type="glucides"
-          am={`${userDatas.carbohydrateCount}g`}
-        />
-        <KeyCard icon={fat} type="lipides" am={`${userDatas.lipidCount}g`} />
+          <KeyCard
+            icon={calories}
+            type="calories"
+            amount={`${userDatas.calorieCount}kCal`}
+          />
+          <KeyCard
+            icon={protein}
+            type="proteines"
+            amount={`${userDatas.proteinCount}g`}
+          />
+          <KeyCard
+            icon={carbs}
+            type="glucides"
+            amount={`${userDatas.carbohydrateCount}g`}
+          />
+          <KeyCard
+            icon={fat}
+            type="lipides"
+            amount={`${userDatas.lipidCount}g`}
+          />
+        </React.StrictMode>
       </div>
     </section>
   );
