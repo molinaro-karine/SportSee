@@ -60,7 +60,7 @@ function Activity({ id }) {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey={userActivity.day} />
+          <XAxis dataKey={userActivity.day} tickLine={false} />
           <YAxis
             yAxisId="kilogram"
             orientation="right"

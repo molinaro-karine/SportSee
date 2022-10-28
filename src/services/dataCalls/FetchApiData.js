@@ -24,7 +24,7 @@ export default class FetchData {
    */
 
   fetchUserDatas() {
-    return fetch(`${url + this.id}`)
+    return fetch(url + this.id)
       .then((response) => response.json())
       .then((result) => {
         if (result !== "can not get user") return new UserDatas(result.data);
@@ -37,7 +37,7 @@ export default class FetchData {
    *
    * @param {string} url
    * @param {number} this.id
-   * @returns {object} data from API - Used in DailyParameters
+   * @returns {object} data from API - Used in Daily Parameters
    */
 
   fetchUserActivity() {
