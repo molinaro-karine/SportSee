@@ -57,7 +57,7 @@ function Performance({ id }) {
       >
         <PolarGrid
           gridType="polygon"
-          polarRadius={[20, 40, 60, 80]}
+          polarRadius={[30, 50, 70, 90]}
           radialLines={false}
         />
         <PolarAngleAxis

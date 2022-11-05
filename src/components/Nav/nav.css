@@ -9,36 +9,46 @@
 
 .nav_logo {
   width: 178px;
-  height: 60.93px;
-  margin-left: 28px;
+  height: 60px;
+  margin-left: 20px;
 }
 
 .nav_links {
   display: flex;
-  flex-flow: row wrap;
-  gap: 7rem;
-  padding-right: 91px;
-  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  list-style-type: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  width: 70%;
 }
 
 .nav-link {
-  color: white;
-  font-size: 2.4rem;
-  padding: 1rem;
   text-decoration: none;
+  line-height: 24px;
+  list-style-type: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 24px;
 }
 
 .nav-link:active,
 .nav-link:focus {
   text-decoration: underline;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .nav_links {
+    width: 70%;
     display: flex;
-    flex-flow: row wrap;
-    gap: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 3%;
+    align-items: center;
+    gap: 67px;
   }
 }

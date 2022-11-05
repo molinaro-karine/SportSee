@@ -10,15 +10,20 @@
   grid-gap: 3rem;
   grid-auto-rows: auto auto;
 }
-.dashboard {
-  margin: 3rem auto 8rem auto;
-  padding: 0 3rem 0 3rem;
-  width: 80%;
-}
+@media screen and (min-width: 1024px) {
+  .dashboard_main {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard {
+    padding-left: 109px;
+    margin: 0;
+  }
+  .dashboard_graph {
+    display: flex;
+    width: 79%;
+    gap: 30px;
 
-.dashboard_main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
-  grid-auto-rows: auto auto;
+    margin-top: 28px;
+  }
 }

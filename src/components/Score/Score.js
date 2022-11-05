@@ -35,7 +35,7 @@ function Score({ score }) {
           ></Pie>
 
           <Pie
-            data={data}
+            data={score}
             dataKey="value"
             innerRadius="75%"
             outerRadius="90%"

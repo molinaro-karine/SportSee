@@ -60,7 +60,8 @@ function Activity({ id }) {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey={userActivity.day} tickLine={false} />
+
+          <XAxis dataKey="day" tickLine={false} />
           <YAxis
             yAxisId="kilogram"
             orientation="right"
@@ -104,7 +105,7 @@ function CustomTooltip({ active, payload }) {
     return (
       <div className="activity_tooltip">
         <p>{payload[0].payload.kilogram}kg</p>
-        <p>{payload[1].payload.calories}Kcal</p>
+        <p>{payload[0].payload.calories}Kcal</p>
       </div>
     );
   }

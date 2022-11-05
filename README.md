@@ -29,8 +29,8 @@ The application is under construction :
 
 - [React](https://www.npmjs.com/package/react) v17.0.2
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) v6.2.1
-- [recharts](https://www.npmjs.com/package/recharts) v2.1.8
-- [prop-types](https://www.npmjs.com/package/prop-types) v15.8.0
+- [recharts](https://www.npmjs.com/package/recharts) v2.1.14
+- [prop-types](https://www.npmjs.com/package/prop-types) v15.8.1
 
 Recommended text editor : [Visual Studio Code](https://code.visualstudio.com).
 
@@ -54,7 +54,7 @@ by
 
 ## Configuration
 
-- To choose between the API data or mocked data, go to src/services/SwitchService.js and change new FetchApiData() to new FetchMockedData().
+- To choose between the API data or mocked data, go to src/services/SwitchService.js and replace isMockedData with true to use local mocked data or false to use API data.
 
 - To switch between the two available user profiles (12 or 18), the two URL are :
 

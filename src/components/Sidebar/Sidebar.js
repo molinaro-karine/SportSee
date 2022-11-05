@@ -2,7 +2,7 @@ import yoga from "../../assets/yoga.svg";
 import swim from "../../assets/natation.svg";
 import cycle from "../../assets/bike.svg";
 import bodybuilding from "../../assets/muscu.svg";
-import ".//sidebar.css";
+import "./sidebar.css";
 import { Link } from "react-router-dom";
 
 /**

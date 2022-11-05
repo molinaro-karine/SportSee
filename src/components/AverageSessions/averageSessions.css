@@ -48,3 +48,19 @@
   padding: 2rem 0;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .sessions {
+    width: 160px;
+    height: 175px;
+  }
+  .sessions_xAxis {
+    padding: 0;
+  }
+  .performance svg.recharts-surface {
+    width: 160px;
+    height: 175px;
+  }
+  .sessions h2 {
+    padding: 1rem;
+  }
+}

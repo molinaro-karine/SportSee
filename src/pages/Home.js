@@ -57,38 +57,45 @@ function Home() {
   if (isError) return <Error404 />;
 
   return (
-    <section className="dashboard">
-      <Header firstName={userDatas.firstName} />
+    <>
+      <section className="dashboard">
+        <Header firstName={userDatas.firstName} />
 
-      <div className="dashboard_main">
-        <Activity id={userIdInt} />
+        <div className="dashboard_main">
+          <Activity id={userIdInt} />
+        </div>
+        <div className="dashboard_graph">
+          <AverageSessions id={userIdInt} />
+          <Performance id={userIdInt} />
+          <Score score={userDatas.score} />
+        </div>
 
-        <AverageSessions id={userIdInt} />
-        <Performance id={userIdInt} />
-        <Score score={userDatas.score} />
-
-        <KeyCard
-          icon={calories}
-          type="calories"
-          amount={`${userDatas.calorieCount}kCal`}
-        />
-        <KeyCard
-          icon={protein}
-          type="proteines"
-          amount={`${userDatas.proteinCount}g`}
-        />
-        <KeyCard
-          icon={carbs}
-          type="glucides"
-          amount={`${userDatas.carbohydrateCount}g`}
-        />
-        <KeyCard
-          icon={fat}
-          type="lipides"
-          amount={`${userDatas.lipidCount}g`}
-        />
-      </div>
-    </section>
+        <section className="dashboard_keyCard">
+          <div className="dashboard_key">
+            <KeyCard
+              icon={calories}
+              type="calories"
+              amount={`${userDatas.calorieCount}kCal`}
+            />
+            <KeyCard
+              icon={protein}
+              type="proteines"
+              amount={`${userDatas.proteinCount}g`}
+            />
+            <KeyCard
+              icon={carbs}
+              type="glucides"
+              amount={`${userDatas.carbohydrateCount}g`}
+            />
+            <KeyCard
+              icon={fat}
+              type="lipides"
+              amount={`${userDatas.lipidCount}g`}
+            />
+          </div>
+        </section>
+      </section>
+    </>
   );
 }
 

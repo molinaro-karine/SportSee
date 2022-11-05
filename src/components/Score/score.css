@@ -29,3 +29,12 @@
   height: 100%;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .score {
+    width: 160px;
+    height: 175px;
+  }
+  .score h2 {
+    top: -21px;
+  }
+}
