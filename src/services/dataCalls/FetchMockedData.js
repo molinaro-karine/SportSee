@@ -33,7 +33,7 @@ export default class FetchData {
   /**
    *
    * @param {number} this.id
-   * @returns {object} data from MockedDatas - Used in DailyParameters
+   * @returns {object} data from MockedDatas - Used in Daily Parameters
    */
 
   fetchUserActivity() {

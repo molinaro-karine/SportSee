@@ -6,7 +6,8 @@ export default class UserDatas {
   constructor(data) {
     this.id = data.id;
     this.firstName = data.userInfos.firstName;
-    this.score = data.todayScore * 100;
+    //this.score = data.todayScore * 100;
+    this.todayScore = data.todayScore || data.score;
     this.calorieCount = data.keyData.calorieCount.toLocaleString("en-US");
     this.proteinCount = data.keyData.proteinCount;
     this.carbohydrateCount = data.keyData.carbohydrateCount;

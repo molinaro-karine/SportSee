@@ -1,3 +1,4 @@
+import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import "./score.css";
 import { PropTypes } from "prop-types";
@@ -32,7 +33,7 @@ function Score({ score }) {
             startAngle={90}
             endAngle={-360}
             paddingAngle={0}
-          ></Pie>
+          />
 
           <Pie
             data={score}
@@ -83,7 +84,7 @@ function Score({ score }) {
 }
 
 Score.propTypes = {
-  score: PropTypes.number.isRequired,
+  score: PropTypes.number,
 };
 
 export default Score;

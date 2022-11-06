@@ -67,7 +67,7 @@ function Home() {
         <div className="dashboard_graph">
           <AverageSessions id={userIdInt} />
           <Performance id={userIdInt} />
-          <Score score={userDatas.score} />
+          <Score score={userDatas.todayScore * 100} />
         </div>
 
         <section className="dashboard_keyCard">
