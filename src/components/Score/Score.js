@@ -28,16 +28,6 @@ function Score({ score }) {
           <Pie
             data={data}
             dataKey="value"
-            outerRadius="75%"
-            fill="white"
-            startAngle={90}
-            endAngle={-360}
-            paddingAngle={0}
-          />
-
-          <Pie
-            data={score}
-            dataKey="value"
             innerRadius="75%"
             outerRadius="90%"
             fill="red"

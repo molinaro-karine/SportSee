@@ -8,7 +8,6 @@
   color: #20253a;
   font-size: 1.5rem;
   padding: 2rem 3rem;
-  grid-area: 1 / 1 / 3 / 4;
   width: 835px;
   height: 320px;
 }
@@ -59,25 +58,29 @@
   color: white;
   font-size: 7px;
   font-weight: 500;
-  /* padding: 1rem; */
-  /* width: 39px; */
-  /* height: 63px; */
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 39px;
+  height: 63px;
 }
-@media screen and (min-width: 1024px) {
+.activity_tooltip p {
+  font-size: 7px;
+  font-weight: 500;
+  margin: 0px;
+}
+@media screen and (max-width: 1024px) {
   .activity {
-    width: 79%;
-    height: 260px;
+    width: 69%;
+    height: 324px;
     padding: 2rem 1rem;
   }
   .activity_title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 18%;
+    gap: 12%;
   }
   .activity_title h2 {
     font-size: 13px;

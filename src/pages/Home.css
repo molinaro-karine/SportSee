@@ -5,25 +5,40 @@
 }
 
 .dashboard_main {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
-  grid-auto-rows: auto auto;
+  flex-wrap: wrap;
+  position: relative;
 }
-@media screen and (min-width: 1024px) {
+
+.dashboard_graph {
+  display: flex;
+  gap: 31px;
+  flex-wrap: wrap;
+}
+.dashboard_key {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-top: 65%;
+}
+@media screen and (max-width: 1024px) {
   .dashboard_main {
     display: flex;
     flex-direction: column;
   }
   .dashboard {
-    padding-left: 109px;
+    padding-left: 59px;
     margin: 0;
   }
   .dashboard_graph {
     display: flex;
     width: 79%;
-    gap: 30px;
-
-    margin-top: 28px;
+    gap: 11px;
+    margin-top: 35px;
+  }
+  .dashboard_key {
+    flex-direction: column;
+    gap: 0;
+    margin-left: -35%;
   }
 }

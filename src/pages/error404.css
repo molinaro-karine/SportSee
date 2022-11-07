@@ -17,8 +17,12 @@
 .not-found_subtitle {
   padding: 2rem;
 }
+.h2.not-found_subtitle {
+  font-size: 24px;
+}
 
 .not-found_link {
   color: red;
   padding: 5rem;
+  font-size: 24px;
 }
